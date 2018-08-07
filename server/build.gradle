@@ -6,9 +6,9 @@ apply plugin: 'com.google.cloud.tools.appengine'
 dependencies {
 
     implementation libraries.kotlin
-    implementation libraries.javaxServlet
+    providedCompile libraries.javaxServlet
 
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

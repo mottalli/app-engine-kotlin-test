@@ -1,14 +1,16 @@
-package com.droidcon.server
+package com.mottalli.kotlintest
 
 import javax.servlet.http.HttpServlet
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
+import javax.servlet.annotation.WebServlet
 
+@WebServlet(name="HelloWorldService", value="/")
 class HelloWorldService : HttpServlet() {
     override fun doGet(req: HttpServletRequest?, resp: HttpServletResponse?) {
         resp?.apply {
             contentType = "text/plain"
-            writer.println("Hello World")
+            writer.println("Hello World from Kotlin!")
         }
     }
 }
