@@ -1,7 +1,6 @@
 ext.versions = [
         kotlin      : '1.2.30',
         appengine   : '1.3.3',
-        //javaxServlet: '2.5'
         javaxServlet: '3.1.0'
 ]
 
